@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="test_abcModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="test_abcModelStoreContainer">
+    <EntitySet Name="tbl_info" EntityType="test_abcModel.Store.tbl_info" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="tbl_info">
+    <Key>
+      <PropertyRef Name="col1" />
+    </Key>
+    <Property Name="col1" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="col2" Type="text" Nullable="false" />
+    <Property Name="col3" Type="int" Nullable="false" />
+  </EntityType>
+</Schema>

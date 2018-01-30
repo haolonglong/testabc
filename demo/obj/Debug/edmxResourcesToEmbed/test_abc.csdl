@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="test_abcModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="test_abcEntities1" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_info" EntityType="test_abcModel.tbl_info" />
+  </EntityContainer>
+  <EntityType Name="tbl_info">
+    <Key>
+      <PropertyRef Name="col1" />
+    </Key>
+    <Property Name="col1" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="col2" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="col3" Type="Int32" Nullable="false" />
+  </EntityType>
+</Schema>
