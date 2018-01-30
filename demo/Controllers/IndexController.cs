@@ -16,9 +16,9 @@ namespace demo.Controllers
         {
 
 
-            System.Data.DataSet ds = tb_mastet.GetAllList();
+           // System.Data.DataSet ds = tb_mastet.GetAllList();
 
-           return View(ds);
+           return View();
         }
         public ActionResult register()
         {
